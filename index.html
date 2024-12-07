@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Search Page</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Type to search...">
+      <button onclick="performSearch()">Search</button>
+    </div>
+    <div class="filters">
+      <label for="sort">Sort By:</label>
+      <select id="sort" onchange="applyFilter()">
+        <option value="relevance">Relevance</option>
+        <option value="date">Date</option>
+      </select>
+    </div>
+    <div class="results" id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
